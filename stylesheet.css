@@ -397,6 +397,7 @@ a:hover {
 @media screen and (max-width: 500px) {
     body {
         width: 100%;
+        max-width: 100%;
     }
     #main { 
         display: block; 
@@ -436,6 +437,7 @@ a:hover {
         text-align: center; 
         width: 100%; 
         padding-top: 0px; 
+        padding-right: 0px;
     }
     #info {
         margin: 0 auto; 
