@@ -180,10 +180,15 @@ h2 {
 .dropdown-menu-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: rgb(254, 254, 255);
     box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
     z-index: 1;
     width: inherit;
+}
+
+.dropdown-menu-content a:hover{
+    background-color: rgb(13, 13, 69);
+    color: rgb(255, 255, 255);
 }
 
 .dropdown-menu-content a {
@@ -220,7 +225,7 @@ h2 {
     flex-flow: row wrap;
     background-color: rgb(255, 255, 255); 
     justify-content: center; 
-    height: 700px;
+    height: auto;
     padding-bottom: 20px;
     color: rgb(13, 13, 69);
 }
@@ -243,6 +248,7 @@ h3 {
 h4 {
     padding-top: 32px;
     font-size: 18px;
+    margin: 0 auto;
 }
 
 #about {
@@ -301,7 +307,7 @@ h4 {
 }
 
 .last {
-    height: 500px;
+    height: auto;
     background-color: rgb(255, 255, 255);
     color: rgb(13, 13, 69);
     margin-top: -16px;
@@ -313,6 +319,8 @@ h4 {
     padding-right: 70px;
     float: left;
     padding-top: 23px;
+    justify-content: center;
+    margin-bottom: -40px;
 }
 
 .headings {
@@ -322,10 +330,15 @@ h4 {
 }
 
 table { 
-    width: 800px;
+    width: auto;
     height: 150px;
-    margin-left: 700px;
+    margin: 0 auto;
     padding-top: 80px;
+}
+
+.links {
+    width: auto;
+    margin: 0 auto; 
 }
 
 th {
@@ -333,7 +346,7 @@ th {
 }
 
 #info {
-    width: 300px;
+    width: 300px; 
 }
 
 a {
@@ -341,12 +354,123 @@ a {
     color: rgb(0, 0, 255);
 }
 
+.name {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(0, 0, 255);
+}
+
 .footer {
     clear: both; 
     text-align: center;
-    padding-top: 100px; 
+    padding: 50px 50px 10px 50px;; 
+    margin: 0 auto; 
+    line-height: 30px;
+}
+
+.social {
+    display: none; 
 }
 
 * {
     font-family: 'Lato', sans-serif;
+}
+
+@media screen and (min-width: 501px) and (max-width: 640px) {
+    .fa {
+        font-size: 
+        
+    }
+    .fa {
+        text-decoration: none; 
+        font-size: 20px;
+        padding: 10px; 
+        margin-top: 10px;
+    }
+    .fa-linkedin {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        width: 100%;
+    }
+    #main { 
+        display: block; 
+        width: 100%; 
+    }
+    .fa {
+        display: none; 
+    }
+    .social {
+        display: inherit; 
+        color: rgb(13, 13, 69); 
+        padding-top: 20px; 
+        font-size: 20px;
+        height: inherit;  
+        margin: 0 auto;
+    }
+    .address {
+        padding: 0px; 
+        padding: 0px 30px;    
+    }
+    img {
+        margin-left: 0px;
+        padding: 0px; 
+    }
+    .blue-button {
+        display: none; 
+    }
+    .drop-down .menu-button {
+        margin-right: 0px; 
+    }
+    .color-grid-container {
+        display: block; 
+        height: auto;
+    }
+    .about {
+        margin: 0px; 
+        text-align: center; 
+        width: 100%; 
+        padding-top: 0px; 
+    }
+    #info {
+        margin: 0 auto; 
+    }
+    .countdown {
+        width: 100%; 
+        justify-content: center;
+    }
+    .circle {
+        height: 70px;
+        width: 70px;
+        border: solid rgb(255, 255, 255) 1px;
+        border-radius: 50%; 
+        background-color: rgb(255, 255, 255);
+        margin: 10px;
+    }
+    .number {
+        font-size: 25px; 
+    }
+    .time {
+        font-size: 12px;
+        padding-top: 5px;
+    }
+    .last {
+        display: block; 
+        height: auto;
+    }
+    table {
+        margin: 0px; 
+        width: 100%; 
+        margin: 0 auto; 
+        padding-top: 50px;
+    }
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }  
 }
