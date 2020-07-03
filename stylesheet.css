@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    margin: 0px; 
 }
 
 #main { 
@@ -319,7 +320,6 @@ h4 {
     width: 50%;
     text-align: center;
     padding-right: 70px;
-    height: 150px; 
     justify-content: center;
 }
 
@@ -438,7 +438,6 @@ a:hover {
         margin-right: 0px; 
     }
     .color-grid-container {
-        display: block; 
         height: auto;
     }
     .final-third {
